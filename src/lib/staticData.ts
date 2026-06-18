@@ -1,0 +1,57 @@
+export interface StaticEconomicEntry {
+  avgMonthlySalaryUSD: number;
+  costOfLiving: number;
+  purchasingPower: number;
+  inflation: number;
+  gdpPerCapita: number;
+}
+
+export const STATIC_DATA: Record<string, StaticEconomicEntry> = {
+  US: { avgMonthlySalaryUSD: 4200, costOfLiving: 100,  purchasingPower: 100,  inflation: 3.4,  gdpPerCapita: 80030 },
+  GB: { avgMonthlySalaryUSD: 3300, costOfLiving: 81,   purchasingPower: 107,  inflation: 4.0,  gdpPerCapita: 46125 },
+  DE: { avgMonthlySalaryUSD: 3200, costOfLiving: 71,   purchasingPower: 109,  inflation: 2.5,  gdpPerCapita: 51383 },
+  FR: { avgMonthlySalaryUSD: 2900, costOfLiving: 80,   purchasingPower: 87,   inflation: 2.7,  gdpPerCapita: 44408 },
+  ES: { avgMonthlySalaryUSD: 2100, costOfLiving: 62,   purchasingPower: 79,   inflation: 3.2,  gdpPerCapita: 33090 },
+  IT: { avgMonthlySalaryUSD: 2000, costOfLiving: 67,   purchasingPower: 73,   inflation: 1.9,  gdpPerCapita: 35657 },
+  NL: { avgMonthlySalaryUSD: 3400, costOfLiving: 79,   purchasingPower: 109,  inflation: 2.7,  gdpPerCapita: 57768 },
+  CH: { avgMonthlySalaryUSD: 6400, costOfLiving: 123,  purchasingPower: 121,  inflation: 1.1,  gdpPerCapita: 92434 },
+  NO: { avgMonthlySalaryUSD: 5200, costOfLiving: 112,  purchasingPower: 110,  inflation: 3.9,  gdpPerCapita: 89154 },
+  SE: { avgMonthlySalaryUSD: 3500, costOfLiving: 82,   purchasingPower: 105,  inflation: 3.5,  gdpPerCapita: 55216 },
+  DK: { avgMonthlySalaryUSD: 4400, costOfLiving: 92,   purchasingPower: 115,  inflation: 2.6,  gdpPerCapita: 67218 },
+  JP: { avgMonthlySalaryUSD: 2500, costOfLiving: 78,   purchasingPower: 77,   inflation: 2.8,  gdpPerCapita: 33815 },
+  KR: { avgMonthlySalaryUSD: 2700, costOfLiving: 72,   purchasingPower: 89,   inflation: 3.6,  gdpPerCapita: 33745 },
+  CN: { avgMonthlySalaryUSD: 1100, costOfLiving: 41,   purchasingPower: 63,   inflation: 0.3,  gdpPerCapita: 12556 },
+  AU: { avgMonthlySalaryUSD: 3800, costOfLiving: 88,   purchasingPower: 101,  inflation: 4.1,  gdpPerCapita: 64491 },
+  NZ: { avgMonthlySalaryUSD: 3100, costOfLiving: 81,   purchasingPower: 93,   inflation: 4.7,  gdpPerCapita: 48806 },
+  CA: { avgMonthlySalaryUSD: 3300, costOfLiving: 82,   purchasingPower: 97,   inflation: 2.9,  gdpPerCapita: 52720 },
+  SG: { avgMonthlySalaryUSD: 3800, costOfLiving: 97,   purchasingPower: 94,   inflation: 3.0,  gdpPerCapita: 84734 },
+  HK: { avgMonthlySalaryUSD: 2800, costOfLiving: 91,   purchasingPower: 73,   inflation: 1.7,  gdpPerCapita: 49661 },
+  TW: { avgMonthlySalaryUSD: 1800, costOfLiving: 57,   purchasingPower: 74,   inflation: 2.5,  gdpPerCapita: 32811 },
+  IN: { avgMonthlySalaryUSD: 380,  costOfLiving: 24,   purchasingPower: 72,   inflation: 4.9,  gdpPerCapita: 2392  },
+  MY: { avgMonthlySalaryUSD: 800,  costOfLiving: 35,   purchasingPower: 55,   inflation: 2.5,  gdpPerCapita: 12636 },
+  PH: { avgMonthlySalaryUSD: 400,  costOfLiving: 30,   purchasingPower: 33,   inflation: 6.0,  gdpPerCapita: 3623  },
+  ID: { avgMonthlySalaryUSD: 330,  costOfLiving: 26,   purchasingPower: 37,   inflation: 2.6,  gdpPerCapita: 4941  },
+  TH: { avgMonthlySalaryUSD: 540,  costOfLiving: 40,   purchasingPower: 35,   inflation: 1.2,  gdpPerCapita: 7066  },
+  VN: { avgMonthlySalaryUSD: 330,  costOfLiving: 33,   purchasingPower: 29,   inflation: 3.6,  gdpPerCapita: 3756  },
+  SA: { avgMonthlySalaryUSD: 1400, costOfLiving: 47,   purchasingPower: 72,   inflation: 1.7,  gdpPerCapita: 23185 },
+  AE: { avgMonthlySalaryUSD: 3000, costOfLiving: 60,   purchasingPower: 113,  inflation: 2.3,  gdpPerCapita: 49451 },
+  IL: { avgMonthlySalaryUSD: 3500, costOfLiving: 85,   purchasingPower: 103,  inflation: 2.7,  gdpPerCapita: 52173 },
+  TR: { avgMonthlySalaryUSD: 630,  costOfLiving: 34,   purchasingPower: 41,   inflation: 65.0, gdpPerCapita: 10616 },
+  BR: { avgMonthlySalaryUSD: 540,  costOfLiving: 35,   purchasingPower: 36,   inflation: 4.8,  gdpPerCapita: 8917  },
+  MX: { avgMonthlySalaryUSD: 620,  costOfLiving: 36,   purchasingPower: 46,   inflation: 5.1,  gdpPerCapita: 10948 },
+  AR: { avgMonthlySalaryUSD: 310,  costOfLiving: 22,   purchasingPower: 29,   inflation: 211.4,gdpPerCapita: 12049 },
+  CO: { avgMonthlySalaryUSD: 360,  costOfLiving: 27,   purchasingPower: 31,   inflation: 7.2,  gdpPerCapita: 6105  },
+  CL: { avgMonthlySalaryUSD: 760,  costOfLiving: 42,   purchasingPower: 44,   inflation: 4.2,  gdpPerCapita: 14929 },
+  PE: { avgMonthlySalaryUSD: 430,  costOfLiving: 32,   purchasingPower: 32,   inflation: 3.9,  gdpPerCapita: 6975  },
+  ZA: { avgMonthlySalaryUSD: 560,  costOfLiving: 36,   purchasingPower: 37,   inflation: 5.0,  gdpPerCapita: 6194  },
+  NG: { avgMonthlySalaryUSD: 130,  costOfLiving: 20,   purchasingPower: 16,   inflation: 28.0, gdpPerCapita: 2184  },
+  KE: { avgMonthlySalaryUSD: 180,  costOfLiving: 27,   purchasingPower: 18,   inflation: 6.8,  gdpPerCapita: 2085  },
+  EG: { avgMonthlySalaryUSD: 170,  costOfLiving: 21,   purchasingPower: 21,   inflation: 32.0, gdpPerCapita: 3301  },
+  PK: { avgMonthlySalaryUSD: 170,  costOfLiving: 22,   purchasingPower: 20,   inflation: 23.0, gdpPerCapita: 1488  },
+  BD: { avgMonthlySalaryUSD: 180,  costOfLiving: 21,   purchasingPower: 20,   inflation: 9.8,  gdpPerCapita: 2688  },
+  RU: { avgMonthlySalaryUSD: 820,  costOfLiving: 36,   purchasingPower: 56,   inflation: 7.4,  gdpPerCapita: 14250 },
+  PL: { avgMonthlySalaryUSD: 1400, costOfLiving: 47,   purchasingPower: 75,   inflation: 3.6,  gdpPerCapita: 18072 },
+  CZ: { avgMonthlySalaryUSD: 1600, costOfLiving: 49,   purchasingPower: 82,   inflation: 2.8,  gdpPerCapita: 26821 },
+  HU: { avgMonthlySalaryUSD: 1100, costOfLiving: 44,   purchasingPower: 63,   inflation: 3.9,  gdpPerCapita: 18678 },
+  RO: { avgMonthlySalaryUSD: 900,  costOfLiving: 40,   purchasingPower: 57,   inflation: 5.6,  gdpPerCapita: 14859 },
+};
